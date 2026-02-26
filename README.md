@@ -1,26 +1,31 @@
-# DevOps Intermediate Skill Assessment
+# 🚀 DevOps Intermediate Skill Assessment
 
-This project is a containerized Node.js application developed for the CodeChine DevOps Task. It demonstrates a complete CI/CD pipeline, Dockerization, and cloud deployment readiness.
+This project demonstrates a complete, automated DevOps workflow for a containerized Node.js application. It covers everything from local development to automated CI/CD and cloud deployment.
 
-## 🚀 Features
-- **Node.js Web Server:** A simple Express app.
-- **Dockerized:** Fully containerized using a multi-stage Dockerfile.
-- **CI/CD Pipeline:** Automated testing and building via GitHub Actions.
-- **Deployment Ready:** Configured for cloud platforms like Render/Railway.
+## 🏗 Project Architecture
+The pipeline is designed for high automation:
+1. **Source Control**: Code managed on GitHub.
+2. **CI/CD Pipeline**: GitHub Actions triggers on every push to `main`.
+3. **Artifact Registry**: Docker images are built and pushed to **Docker Hub**.
+4. **Cloud Deployment**: The application is automatically deployed and hosted on **Hugging Face Spaces** using Docker SDK.
+
+
 
 ## 🛠 Tech Stack
-- **Language:** Node.js
-- **Framework:** Express.js
-- **Containerization:** Docker
-- **Automation:** GitHub Actions (YAML)
+- **Backend:** Node.js (Express.js)
+- **Containerization:** Docker (Multi-stage builds)
+- **CI/CD:** GitHub Actions
+- **Registry:** Docker Hub
+- **Deployment:** Hugging Face Spaces
 
-## 📂 Project Structure
-- `app.js`: Main application logic.
-- `Dockerfile`: Instructions for building the Docker image.
-- `.github/workflows/main.yml`: CI/CD pipeline configuration.
-- `.dockerignore`: Files to exclude from the Docker build.
+## 🔗 Live Project Links
+- **🌐 Live Demo (Hugging Face):** https://huggingface.co/spaces/swen213/devops-assessment
+- **🐳 Docker Hub Image:** https://hub.docker.com/repository/docker/remi377/devops-skill-assessment/general
+- **🎥 LinkedIn Video Demo:** [PASTE_YOUR_LINKEDIN_POST_URL_HERE]
 
-## 🚦 How to Run Locally
-1. Clone the repo: `git clone https://github.com/remi-zafar/Devops-skill-assessment.git`
-2. Build Docker image: `docker build -t devops-app .`
-3. Run container: `docker run -p 3000:3000 devops-app`
+## 🚀 How to Run Locally
+If you have Docker installed, you can pull and run the image directly:
+```bash
+docker pull remi377/devops-skill-assessment:latest
+docker run -p 3000:7860 remi377/devops-skill-assessment:latest
+
