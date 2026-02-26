@@ -22,4 +22,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: remi377/devops-skill-assessment:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/devops-skill-assessment:latest
